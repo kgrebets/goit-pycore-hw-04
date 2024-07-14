@@ -1,7 +1,7 @@
 def total(path):
     try:
+        salaries = []
         with open(path, 'r', encoding='utf-8') as file:
-            salaries = []
             for line in file:
                 parts = line.strip().split(',')
                 if len(parts) == 2:
